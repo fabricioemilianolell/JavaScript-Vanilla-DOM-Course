@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Tabs</title>
+</head>
+<body>
+    <section class="section-principal">
+            <h1>Pestañas</h1>
+            <p class="parr-principal">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, id.</p>
+        <div class="contenedor-cajas">
+            <div class="contenedor-imagen">
+                <img class="img" width="300p" height="300px" src="imagenes/pier-g3a43bb3da_1920.jpg" alt="">
+            </div>
+            <!-- seleccionado en js -->
+            <article class="contenedor-principal"> 
+                <!-- botones mostrarOcultar js-->
+                <div class="button-contenedor">
+                    <!-- mostrarOcultar en el primer boton-->
+                    <button class="btn-pestañas mostrarOcultar" data-id="historia">HISTORIA</button>
+                    <button class="btn-pestañas" data-id="vision">VISIÓN</button>
+                    <button class="btn-pestañas" data-id="metas">METAS</button>
+                </div>
+                    <!-- textos mostrarOcultar js-->
+                <div class="textos-contenedor">
+                        <!-- mostrarOcultar en el primer texto-visible-->
+                        <div class="textos mostrarOcultar" id="historia">
+                            <h3>HISTORIA</h3>
+                            <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, consequuntur. odi vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus aliquam </p>
+                        </div>
+                        <!-- texto no visible- se hace visible con js -->
+                        <div class="textos" id="vision">
+                            <h3>VISIÓN</h3>
+                            <p class="parrafo">Nulla officiis rem neque suscipit unde, maiores quos.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dolorem. Lorem ipsum dolor sit amet consectetur adipisicing elit. At, minima.odi vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus aliquam </p>
+                        </div>
+                         <!-- texto no visible- se hace visible con js -->
+                        <div class="textos" id="metas">
+                            <h3>MISIÓN</h3>
+                            <p class="parrafo">rerum beatae tempore dolorum repellat eaque, iste tempora itaque ab minima nisi modi vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat delectus aliquam fugit aut ipsam? Totam, porro. Modi eligendi veniam amet?</p>
+                        </div>
+                </div>
+            </article>  
+        </div>
+    </section>
+    
+        <script src="script.js"></script>
+</body>
+</html>

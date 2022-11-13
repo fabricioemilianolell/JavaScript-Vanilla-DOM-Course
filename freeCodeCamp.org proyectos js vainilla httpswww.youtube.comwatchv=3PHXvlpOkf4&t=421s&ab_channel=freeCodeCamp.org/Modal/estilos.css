@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(imagenes/vecteezy_background-fineartabstract_kp0121.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+}
+
+
+.contenedor-modal {
+    background-color: rgb(137, 43, 226);
+   border-radius: 15px;
+   box-shadow: 2px 2px 15px rgba(128, 128, 128, 0.767);
+    width: 300px;
+    height: 300px;
+    display: grid;
+    place-content: center;
+}
+
+.contenedor-background {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 60, 255, 0.26);
+    position: absolute;
+     /* oculta la caja */
+     visibility: hidden;
+    z-index: -1; 
+}
+
+
+
+/* toggle o if js agregado en js*/
+.btn-visibility {
+    visibility: visible;
+    z-index: 1;
+}
+
+
+
+.contenedor-fixed {
+    background-color: rgb(137, 43, 226);
+    border-radius: 15px;
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-content: center; 
+}
+
+
+h1 {
+    color: black;
+    letter-spacing: 2px;
+    font-style: italic;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.btn {
+    padding: 12px;
+    margin: 0 auto;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    color:  black;
+    border: none;
+}
+
+.btn-img {
+    position: absolute;
+    left: 80%;
+}
+
+h2 {
+    color: black;
+    letter-spacing: 2px;
+    font-style: italic;
+    font-size: 35px;
+}
+
+

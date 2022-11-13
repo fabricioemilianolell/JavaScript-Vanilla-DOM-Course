@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+header {
+    width: 100%;
+    height: 100%;
+    background: url(imagenes/pier-g3a43bb3da_1920.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+}
+
+.nav-div-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 100%;  
+}
+
+.logo {
+    font-size: 50px;
+    padding-left: 50px;
+    color: black;
+    padding: 15px;
+}
+.button-nav {
+    display: none;
+}
+
+.img-menu {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+/* .listas-contenedor  {
+height: auto !important;
+} */
+
+.listas-contenedor ul {
+    display: flex;
+    list-style: none;
+    font-size: 20px;    
+}
+
+.listas-li a{
+    padding-left: 0px;
+    padding-right: 70px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+
+.titulo-principal {
+height: 500px;
+display: grid;
+place-content: center;
+text-align: center;
+}
+
+.contenedor-titulo h1 {
+    font-size: 40px;
+}
+
+.contenedor-titulo p {
+    width: 70%;
+    margin: 28px auto;
+    font-size: 20px;
+}
+
+.contenedor-titulo button {
+    background-color: rgba(0, 0, 0, 0);
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+.contenedor-titulo button a {
+    color: black;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.section {
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.section1 {
+    background-color: #EEEEEE;
+}
+.section2 {
+background-color: #87a2fb48;
+}
+.section3 {
+background-color: #eeeeee46;
+}
+.section4 {
+
+background-color: #ecc5fb4b;
+}
+
+
+.footer-contenedor {
+    width: 100%;
+    height: 100px;
+    color: black;
+    background-color: white;
+    line-height: 100px;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    box-shadow: -2px -2px 15px rgba(128, 128, 128, 0.418);
+}
+
+.btn-fixed {
+    position: fixed;
+    top:87%;
+    left: 93%;
+    /* boton no se ve */
+    visibility: hidden;
+    z-index: -100;
+    animation-name: botonAnimado;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes botonAnimado {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+/* evento SCROLL mostrar icono btn-fixed js  */
+.mostrar-icono {
+    visibility: visible;
+    z-index: 100;
+}
+
+
+   /* nav-menu fixed evento SCROLL - pageYOffset - getBoundingClientRect().height js */
+   .menu-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+}
+
+@media (max-width: 850px) {
+
+  
+    .nav-div-contenedor {
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: white;
+        box-shadow: -3px -3px 15px 5px rgba(128, 128, 128, 0.377);
+    }
+
+    /* button menu disparador js */
+    .button-nav {
+        display: block;
+        position: absolute;
+        top: 4%;
+        left: 90%;
+    }
+
+     .listas-contenedor {
+        /* altura del contenedor 0 */
+        height: 0;
+        /* listas contenido que sale de la caja se oculta */
+         overflow: hidden;
+         width: 100%;  
+         transition: all 1s ease-out;
+                 
+    } 
+    /* toogle js 
+    .mostrar-listas {
+        height: 260px;
+    } */
+
+    .listas-contenedor ul {
+        display: block;
+    }
+
+    .listas-li {
+        padding: 20px;
+        width: 100%;
+    }
+    
+}
+

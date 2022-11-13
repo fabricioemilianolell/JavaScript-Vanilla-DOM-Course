@@ -1,0 +1,99 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section-contenedor {
+    background-color: #E1FFEE;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.div-contenedor {
+    background-color: #E1FFEE;
+    padding-bottom: 50px;
+} 
+
+.articles-contenedor {
+background-color: white;
+width: 50%;
+margin: 25px auto;
+padding: 30px;
+border-radius: 20px;
+box-shadow: 2px 2px 10px rgba(128, 128, 128, 0.514);
+
+
+}
+
+h1 {
+  text-align: center;
+  padding-top: 75px;
+  padding-bottom: 30px;
+  font-size: 40px;
+  color: #355764;
+  letter-spacing: 5px;  
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h3 {
+    padding-right: 10px;
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.parrafo-oculto {
+    padding-top: 15px;
+    font-size: 20px;
+
+}   
+
+.article-div {
+    display: flex;
+
+}
+
+.btn-mas-menos {
+    background-color: white;
+    border: none;
+}
+
+
+
+.img-mas {
+    width: 30px;
+    height: 30px;
+}
+
+.img-menos {
+    width: 30px;
+    height: 30px;
+}
+
+
+
+/* oculto parrafo e ícono menos */
+
+.parrafo-oculto {
+    display: none;
+}
+
+.btn-menos {
+    display: none;
+}
+
+/* js mostrar parrafo e ícono menos al hacer click en más (que se oculta) */
+
+.mostrar .parrafo-oculto {
+    display: block;
+}
+
+.mostrar .btn-menos {
+    display: block;
+}
+
+.mostrar .btn-mas {
+    display: none;
+} 
+

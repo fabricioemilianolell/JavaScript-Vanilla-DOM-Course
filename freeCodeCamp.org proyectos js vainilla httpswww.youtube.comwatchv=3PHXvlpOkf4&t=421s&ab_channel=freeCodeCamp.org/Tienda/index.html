@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Grocery</title>
+</head>
+<body>
+    
+    <section class="section-center">
+        <!-- formulario -->
+        <form class="tienda-form">
+            <p class="alerta"></p>
+            <h3>Nuestra Tienda</h3>
+            <div class="form-control">
+                <input type="text" name="" id="tienda" placeholder="Productos">
+                <button type="submit" class="submit-btn">Enviar</button>
+            </div>
+        </form>
+        <!-- listas -->
+        <!-- container de items oculto, se muestra en js -->
+        <div class="tienda-container">
+            <!-- append child a article dinámico js -->
+            <div class="tienda-list">
+                <!-- grocery items se creo en js createElement article -->
+                <!-- <article class="tienda-items"> -->
+                    <!-- añadido dinamicamente en js -->
+               <!-- <p class="title">Productos</p>
+                    <div class="btn-container">
+                        <button type="button" class="edit-btn">
+                            <img class="imagen-subir" src="imagenes/icons8-subir-48.png" alt="">
+                        </button>
+                        <button type="button" class="delete-btn">
+                            <img class="imagen-eliminar" src="imagenes/icons8-trash-48.png" alt="">
+                        </button>
+                    </div> -->
+                <!-- </article> -->
+            </div>
+            <!-- botones -->
+            <button type="button" class="clear-btn">Limpiar Productos</button>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

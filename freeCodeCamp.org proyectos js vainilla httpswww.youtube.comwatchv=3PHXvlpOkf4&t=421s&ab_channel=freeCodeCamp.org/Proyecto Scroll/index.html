@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <!-- <link rel="shortcut icon" href="#"> -->
+    <title>scroll proyect</title>
+</head>
+<body>
+    <header id="home" class="header-contenedor">
+        <!-- nav menu fixed js -->
+        <nav class="nav-menu">
+            <div class="nav-div-contenedor">
+                <div class="nav-contenedor">
+                    <div class="nav-header">
+                        <p class="logo">Logo</p>
+                        <!-- button toggle js -->
+                        <button class="button-nav">
+                            <img class="img-menu" src="imagenes/menu.png" alt="">
+                        </button>
+                    </div>
+                </div>
+                <!-- listas getBoundingClientRect() height = 0 js  -->
+                <div class="listas-contenedor"> 
+                    <!-- listas getBoundingClientRect() heigth = dinamico js -->
+                    <ul class="listas-ul">
+                        <li class="listas-li">
+                            <!-- smooth scroll -->
+                            <a href="#homeSection" class="links">home</a>
+                        </li>
+                        <li class="listas-li">
+                            <a href="#nuestrosValores" class="links">Nuestros valores</a>
+                        </li>
+                        <li class="listas-li">
+                            <a href="#servicios" class="links">Servicios</a>
+                        </li>
+                        <li class="listas-li">
+                            <a href="#acercaDe" class="links">Acerca de</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+            <div class="titulo-principal">
+                <div class="contenedor-titulo">
+                    <h1>PROYECTO SCROLL</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sunt, saepe totam voluptatibus repellat similique consectetur optio. Atque, natus! Cupiditate.</p>
+                    <button class="btn-acerca-de">
+                    <a href="#acerca-de-btn" class="links btn">TOURS</a>
+                    </button>
+                </div>
+            </div>
+    </header>
+        <!-- secciones -->
+        <!-- smooth scroll -->
+        <section id="homeSection" class="section section1">
+            <div class="titulo-section">
+                <h2>HOME</h2>
+            </div>
+        </section>
+        <section id="nuestrosValores" class="section section2">
+            <div class="titulo-section">
+                <h2>NUESTROS VALORES</h2>
+        </section>
+        <section id="servicios" class="section section3">
+            <div class="titulo-section">
+                <h2>SERVICIOS</h2>
+        </section>
+        <section id="acercaDe" class="section section4">
+            <div class="titulo-section">
+                <h2>ACERCA DE</h2>
+        </section>
+        
+    
+    <!-- footer -->
+    <footer class="footer-contenedor">
+        <p>&copy;copyright empresa de turismo internacional 
+            <!-- new date js añadido dinámicamente -->
+            <span id="año"></span> derechos reservados</p>
+            <!-- link boton vuelve al header -->
+    </footer>
+    <a href="#home" class="links btn-fixed">
+        <img class="img-home" src="imagenes/icons8-up-arrow-48.png" alt="">
+        </a>
+           
+
+        <!-- javascript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
